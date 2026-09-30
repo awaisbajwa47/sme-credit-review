@@ -1,0 +1,17 @@
+OPEN THE PROJECT FOLDER IN VS CODE
+
+Terminal 1 (PowerShell), from the project folder:
+cd backend
+py -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m uvicorn main:app --reload --port 8000
+
+Terminal 2, from the project folder:
+cd frontend
+npm.cmd install
+npm.cmd run dev
+
+Keep both terminals running. Open http://localhost:3000 in your browser.
+Dependencies need installing only once. No activation script or API key is required.
+
+Design changes: strengths/concerns cards, expandable risk calculations, three-zone score meter with pointer and legend, plain-language repayment risk, lakh/crore amounts and exact requested amount, portfolio cards, and original-vs-simulated assessment labels.
